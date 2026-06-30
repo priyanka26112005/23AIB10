@@ -15,7 +15,7 @@ import { NotificationCard } from "../components/NotificationCard";
 import { NotificationFilter } from "../components/NotificationFilter";
 import { useNotifications } from "../hooks/useNotifications";
 
-export function NotificationsPage() {
+export default function NotificationsPage() {
   const [filter, setFilter] = useState();
   const [page, setPage] = useState("1");
 
@@ -84,3 +84,4 @@ export function NotificationsPage() {
     </Box>
   );
 }
+
